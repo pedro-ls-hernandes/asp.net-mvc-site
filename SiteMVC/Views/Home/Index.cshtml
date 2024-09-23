@@ -1,8 +1,12 @@
-﻿@{
+﻿@model HomeModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Bem vindo ao AutoZone, @Model.Nome</h1>
+    <p>Aqui você pode manter acompanhar a manutenção de seu veículo em tempo real.</p>
+    <span>Seu email é: @Model.Email</span>
+    <br />
+    
 </div>
